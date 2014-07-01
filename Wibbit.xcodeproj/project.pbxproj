@@ -19,6 +19,13 @@
 		C509ACA71963248600566BDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509AC8F1963248500566BDF /* UIKit.framework */; };
 		C509ACAF1963248600566BDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C509ACAD1963248600566BDF /* InfoPlist.strings */; };
 		C509ACB11963248600566BDF /* WibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C509ACB01963248600566BDF /* WibbitTests.m */; };
+		C509ACBB196324B400566BDF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C509ACBA196324B400566BDF /* MainStoryboard.storyboard */; };
+		C509ACC2196326A800566BDF /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = C509ACBC196326A800566BDF /* camera.png */; };
+		C509ACC3196326A800566BDF /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C509ACBD196326A800566BDF /* camera@2x.png */; };
+		C509ACC4196326A800566BDF /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = C509ACBE196326A800566BDF /* friends.png */; };
+		C509ACC5196326A800566BDF /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C509ACBF196326A800566BDF /* friends@2x.png */; };
+		C509ACC6196326A800566BDF /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = C509ACC0196326A800566BDF /* inbox.png */; };
+		C509ACC7196326A800566BDF /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C509ACC1196326A800566BDF /* inbox@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		C509ACAC1963248600566BDF /* WibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WibbitTests-Info.plist"; sourceTree = "<group>"; };
 		C509ACAE1963248600566BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C509ACB01963248600566BDF /* WibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WibbitTests.m; sourceTree = "<group>"; };
+		C509ACBA196324B400566BDF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C509ACBC196326A800566BDF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		C509ACBD196326A800566BDF /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		C509ACBE196326A800566BDF /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
+		C509ACBF196326A800566BDF /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
+		C509ACC0196326A800566BDF /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
+		C509ACC1196326A800566BDF /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,8 @@
 		C509AC7F1963248500566BDF = {
 			isa = PBXGroup;
 			children = (
+				C509ACC8196326B400566BDF /* Images */,
+				C509ACBA196324B400566BDF /* MainStoryboard.storyboard */,
 				C509AC911963248500566BDF /* Wibbit */,
 				C509ACAA1963248600566BDF /* WibbitTests */,
 				C509AC8A1963248500566BDF /* Frameworks */,
@@ -144,6 +160,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C509ACC8196326B400566BDF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C509ACBC196326A800566BDF /* camera.png */,
+				C509ACBD196326A800566BDF /* camera@2x.png */,
+				C509ACBE196326A800566BDF /* friends.png */,
+				C509ACBF196326A800566BDF /* friends@2x.png */,
+				C509ACC0196326A800566BDF /* inbox.png */,
+				C509ACC1196326A800566BDF /* inbox@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +221,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Big Dog Consultants";
 				TargetAttributes = {
+					C509AC871963248500566BDF = {
+						DevelopmentTeam = 366WD22XD2;
+					};
 					C509ACA21963248600566BDF = {
 						TestTargetID = C509AC871963248500566BDF;
 					};
@@ -220,8 +252,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C509ACBB196324B400566BDF /* MainStoryboard.storyboard in Resources */,
+				C509ACC4196326A800566BDF /* friends.png in Resources */,
+				C509ACC5196326A800566BDF /* friends@2x.png in Resources */,
+				C509ACC3196326A800566BDF /* camera@2x.png in Resources */,
+				C509ACC6196326A800566BDF /* inbox.png in Resources */,
 				C509AC961963248500566BDF /* InfoPlist.strings in Resources */,
+				C509ACC2196326A800566BDF /* camera.png in Resources */,
 				C509AC9E1963248600566BDF /* Images.xcassets in Resources */,
+				C509ACC7196326A800566BDF /* inbox@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +397,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wibbit/Wibbit-Prefix.pch";
 				INFOPLIST_FILE = "Wibbit/Wibbit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,10 +413,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wibbit/Wibbit-Prefix.pch";
 				INFOPLIST_FILE = "Wibbit/Wibbit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
