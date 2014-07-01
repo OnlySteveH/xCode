@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C509AC8C1963248500566BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509AC8B1963248500566BDF /* Foundation.framework */; };
+		C509AC8E1963248500566BDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509AC8D1963248500566BDF /* CoreGraphics.framework */; };
+		C509AC901963248500566BDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509AC8F1963248500566BDF /* UIKit.framework */; };
+		C509AC961963248500566BDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C509AC941963248500566BDF /* InfoPlist.strings */; };
+		C509AC981963248600566BDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C509AC971963248600566BDF /* main.m */; };
+		C509AC9C1963248600566BDF /* BDCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C509AC9B1963248600566BDF /* BDCAppDelegate.m */; };
+		C509AC9E1963248600566BDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C509AC9D1963248600566BDF /* Images.xcassets */; };
+		C509ACA51963248600566BDF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509ACA41963248600566BDF /* XCTest.framework */; };
+		C509ACA61963248600566BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509AC8B1963248500566BDF /* Foundation.framework */; };
+		C509ACA71963248600566BDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509AC8F1963248500566BDF /* UIKit.framework */; };
+		C509ACAF1963248600566BDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C509ACAD1963248600566BDF /* InfoPlist.strings */; };
+		C509ACB11963248600566BDF /* WibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C509ACB01963248600566BDF /* WibbitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C509ACA81963248600566BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C509AC801963248500566BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C509AC871963248500566BDF;
+			remoteInfo = Wibbit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C509AC881963248500566BDF /* Wibbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wibbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C509AC8B1963248500566BDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C509AC8D1963248500566BDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C509AC8F1963248500566BDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C509AC931963248500566BDF /* Wibbit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wibbit-Info.plist"; sourceTree = "<group>"; };
+		C509AC951963248500566BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C509AC971963248600566BDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C509AC991963248600566BDF /* Wibbit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wibbit-Prefix.pch"; sourceTree = "<group>"; };
+		C509AC9A1963248600566BDF /* BDCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDCAppDelegate.h; sourceTree = "<group>"; };
+		C509AC9B1963248600566BDF /* BDCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDCAppDelegate.m; sourceTree = "<group>"; };
+		C509AC9D1963248600566BDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C509ACA31963248600566BDF /* WibbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WibbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C509ACA41963248600566BDF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C509ACAC1963248600566BDF /* WibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WibbitTests-Info.plist"; sourceTree = "<group>"; };
+		C509ACAE1963248600566BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C509ACB01963248600566BDF /* WibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WibbitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C509AC851963248500566BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509AC8E1963248500566BDF /* CoreGraphics.framework in Frameworks */,
+				C509AC901963248500566BDF /* UIKit.framework in Frameworks */,
+				C509AC8C1963248500566BDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C509ACA01963248600566BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509ACA51963248600566BDF /* XCTest.framework in Frameworks */,
+				C509ACA71963248600566BDF /* UIKit.framework in Frameworks */,
+				C509ACA61963248600566BDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C509AC7F1963248500566BDF = {
+			isa = PBXGroup;
+			children = (
+				C509AC911963248500566BDF /* Wibbit */,
+				C509ACAA1963248600566BDF /* WibbitTests */,
+				C509AC8A1963248500566BDF /* Frameworks */,
+				C509AC891963248500566BDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C509AC891963248500566BDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C509AC881963248500566BDF /* Wibbit.app */,
+				C509ACA31963248600566BDF /* WibbitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C509AC8A1963248500566BDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C509AC8B1963248500566BDF /* Foundation.framework */,
+				C509AC8D1963248500566BDF /* CoreGraphics.framework */,
+				C509AC8F1963248500566BDF /* UIKit.framework */,
+				C509ACA41963248600566BDF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C509AC911963248500566BDF /* Wibbit */ = {
+			isa = PBXGroup;
+			children = (
+				C509AC9A1963248600566BDF /* BDCAppDelegate.h */,
+				C509AC9B1963248600566BDF /* BDCAppDelegate.m */,
+				C509AC9D1963248600566BDF /* Images.xcassets */,
+				C509AC921963248500566BDF /* Supporting Files */,
+			);
+			path = Wibbit;
+			sourceTree = "<group>";
+		};
+		C509AC921963248500566BDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C509AC931963248500566BDF /* Wibbit-Info.plist */,
+				C509AC941963248500566BDF /* InfoPlist.strings */,
+				C509AC971963248600566BDF /* main.m */,
+				C509AC991963248600566BDF /* Wibbit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C509ACAA1963248600566BDF /* WibbitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C509ACB01963248600566BDF /* WibbitTests.m */,
+				C509ACAB1963248600566BDF /* Supporting Files */,
+			);
+			path = WibbitTests;
+			sourceTree = "<group>";
+		};
+		C509ACAB1963248600566BDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C509ACAC1963248600566BDF /* WibbitTests-Info.plist */,
+				C509ACAD1963248600566BDF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C509AC871963248500566BDF /* Wibbit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C509ACB41963248600566BDF /* Build configuration list for PBXNativeTarget "Wibbit" */;
+			buildPhases = (
+				C509AC841963248500566BDF /* Sources */,
+				C509AC851963248500566BDF /* Frameworks */,
+				C509AC861963248500566BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wibbit;
+			productName = Wibbit;
+			productReference = C509AC881963248500566BDF /* Wibbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C509ACA21963248600566BDF /* WibbitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C509ACB71963248600566BDF /* Build configuration list for PBXNativeTarget "WibbitTests" */;
+			buildPhases = (
+				C509AC9F1963248600566BDF /* Sources */,
+				C509ACA01963248600566BDF /* Frameworks */,
+				C509ACA11963248600566BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C509ACA91963248600566BDF /* PBXTargetDependency */,
+			);
+			name = WibbitTests;
+			productName = WibbitTests;
+			productReference = C509ACA31963248600566BDF /* WibbitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C509AC801963248500566BDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BDC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Big Dog Consultants";
+				TargetAttributes = {
+					C509ACA21963248600566BDF = {
+						TestTargetID = C509AC871963248500566BDF;
+					};
+				};
+			};
+			buildConfigurationList = C509AC831963248500566BDF /* Build configuration list for PBXProject "Wibbit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C509AC7F1963248500566BDF;
+			productRefGroup = C509AC891963248500566BDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C509AC871963248500566BDF /* Wibbit */,
+				C509ACA21963248600566BDF /* WibbitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C509AC861963248500566BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509AC961963248500566BDF /* InfoPlist.strings in Resources */,
+				C509AC9E1963248600566BDF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C509ACA11963248600566BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509ACAF1963248600566BDF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C509AC841963248500566BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509AC9C1963248600566BDF /* BDCAppDelegate.m in Sources */,
+				C509AC981963248600566BDF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C509AC9F1963248600566BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C509ACB11963248600566BDF /* WibbitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C509ACA91963248600566BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C509AC871963248500566BDF /* Wibbit */;
+			targetProxy = C509ACA81963248600566BDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C509AC941963248500566BDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C509AC951963248500566BDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C509ACAD1963248600566BDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C509ACAE1963248600566BDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C509ACB21963248600566BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C509ACB31963248600566BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C509ACB51963248600566BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wibbit/Wibbit-Prefix.pch";
+				INFOPLIST_FILE = "Wibbit/Wibbit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C509ACB61963248600566BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wibbit/Wibbit-Prefix.pch";
+				INFOPLIST_FILE = "Wibbit/Wibbit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C509ACB81963248600566BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wibbit.app/Wibbit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wibbit/Wibbit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WibbitTests/WibbitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C509ACB91963248600566BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wibbit.app/Wibbit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wibbit/Wibbit-Prefix.pch";
+				INFOPLIST_FILE = "WibbitTests/WibbitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C509AC831963248500566BDF /* Build configuration list for PBXProject "Wibbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C509ACB21963248600566BDF /* Debug */,
+				C509ACB31963248600566BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C509ACB41963248600566BDF /* Build configuration list for PBXNativeTarget "Wibbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C509ACB51963248600566BDF /* Debug */,
+				C509ACB61963248600566BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C509ACB71963248600566BDF /* Build configuration list for PBXNativeTarget "WibbitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C509ACB81963248600566BDF /* Debug */,
+				C509ACB91963248600566BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C509AC801963248500566BDF /* Project object */;
+}
