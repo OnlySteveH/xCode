@@ -7,12 +7,18 @@
 //
 
 #import "BDCAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation BDCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-     return YES;
+    [NSThread sleepForTimeInterval:1.5];
+    
+    [Parse setApplicationId:@"Kkh35Frn0LsIt2OD6aGMpF17XvGtxEphMG590WWV"
+                  clientKey:@"gwQgVmDdLgU6EQozOCfLzx9eW8nS43zXddSqqsLr"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
