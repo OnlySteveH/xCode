@@ -24,8 +24,7 @@
     if([UIScreen mainScreen].bounds.size.height == 568) {
         self.backgroundImageView.image = [UIImage imageNamed:@"loginBackground"];
     }
-    self.usernameField.delegate = self;
-    self.passwordField.delegate = self;
+
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -66,13 +65,6 @@
                         }
                     }];
                 }
-}
-
-#pragma mark - UITextField delegate methods
-
-- (BOOL) textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
 }
 
 

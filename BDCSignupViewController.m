@@ -22,9 +22,7 @@
     if([UIScreen mainScreen].bounds.size.height == 568) {
         self.backgroundImageView.image = [UIImage imageNamed:@"loginBackground"];
     }
-    self.usernameField.delegate = self;
-    self.passwordField.delegate = self;
-    self.emailField.delegate = self;
+
     
 }
 
@@ -79,11 +77,6 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-#pragma mark - UITextField delegate methods
 
-- (BOOL) textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
-}
 
 @end

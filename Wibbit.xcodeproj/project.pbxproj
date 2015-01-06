@@ -36,6 +36,8 @@
 		C509ACEB196C7AE100566BDF /* BDCFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C509ACEA196C7AE100566BDF /* BDCFriendsViewController.m */; };
 		C509ACEE196EB03500566BDF /* BDCCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C509ACED196EB03500566BDF /* BDCCameraViewController.m */; };
 		C550DADC1A4DB35F00D94300 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550DADB1A4DB35F00D94300 /* Images.xcassets */; };
+		C550DB1D1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C550DB1C1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.m */; };
+		C550DB201A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C550DB1F1A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		C5DA8D46197560B100F94A69 /* BDCImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DA8D45197560B100F94A69 /* BDCImageViewController.m */; };
 		C5DA8D4819756FA200F94A69 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DA8D4719756FA200F94A69 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,10 @@
 		C509ACEC196EB03500566BDF /* BDCCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCCameraViewController.h; sourceTree = "<group>"; };
 		C509ACED196EB03500566BDF /* BDCCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCCameraViewController.m; sourceTree = "<group>"; };
 		C550DADB1A4DB35F00D94300 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C550DB1B1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		C550DB1C1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		C550DB1E1A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		C550DB1F1A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		C5DA8D44197560B100F94A69 /* BDCImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCImageViewController.h; sourceTree = "<group>"; };
 		C5DA8D45197560B100F94A69 /* BDCImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCImageViewController.m; sourceTree = "<group>"; };
 		C5DA8D4719756FA200F94A69 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -194,6 +200,10 @@
 				C509ACE119633BBA00566BDF /* BDCLoginViewController.m */,
 				C550DADB1A4DB35F00D94300 /* Images.xcassets */,
 				C509AC921963248500566BDF /* Supporting Files */,
+				C550DB1B1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.h */,
+				C550DB1C1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.m */,
+				C550DB1E1A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				C550DB1F1A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			path = Wibbit;
 			sourceTree = "<group>";
@@ -335,9 +345,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C509ACE8196B30F700566BDF /* BDCEditFriendsViewController.m in Sources */,
+				C550DB1D1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				C509ACE219633BBA00566BDF /* BDCLoginViewController.m in Sources */,
 				C509ACCB196330F700566BDF /* BDCInboxViewController.m in Sources */,
 				C509AC9C1963248600566BDF /* BDCAppDelegate.m in Sources */,
+				C550DB201A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				C509ACEB196C7AE100566BDF /* BDCFriendsViewController.m in Sources */,
 				C509ACEE196EB03500566BDF /* BDCCameraViewController.m in Sources */,
 				C509AC981963248600566BDF /* main.m in Sources */,
