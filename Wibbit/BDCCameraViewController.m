@@ -8,6 +8,7 @@
 
 #import "BDCCameraViewController.h"
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "MSCellAccessory.h"
 
 @interface BDCCameraViewController ()
 
@@ -15,12 +16,15 @@
 
 @implementation BDCCameraViewController
 
+UIColor *disclosureColor;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.recipients = [[NSMutableArray alloc] init];
+    disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -80,10 +84,10 @@
     cell.textLabel.text = user.username;
     
     if([self.recipients containsObject:user.objectId]){
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
     }
     else{
-        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryView = nil;
     }
     
     return cell;
@@ -93,12 +97,12 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     PFUser *user = [self.friends objectAtIndex:indexPath.row];
-    if(cell.accessoryType == UITableViewCellAccessoryNone){
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    if(cell.accessoryView == nil){
+        cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
         [self.recipients addObject:user.objectId];
     }
     else{
-        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryView = nil;
         [self.recipients removeObject:user.objectId];
     }
     NSLog(@"%@", self.recipients);

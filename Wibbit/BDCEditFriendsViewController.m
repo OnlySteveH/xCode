@@ -7,12 +7,15 @@
 //
 
 #import "BDCEditFriendsViewController.h"
+#import "MSCellAccessory.h"
 
 @interface BDCEditFriendsViewController ()
 
 @end
 
 @implementation BDCEditFriendsViewController
+
+UIColor *disclosureColor;
 
 - (void)viewDidLoad
 {
@@ -30,7 +33,7 @@
         
     }];
     self.currentUser = [PFUser currentUser];
-    
+    disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
 }
 
 #pragma mark - Table view data source
@@ -46,7 +49,7 @@
     
     if([self isFriend:user]){
         // remove checkmark
-        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryView = nil;
         // remove from array
         for (PFUser *friend in self.friends){
             if([friend.objectId isEqualToString:user.objectId]){
@@ -58,7 +61,8 @@
         [friendsRelation removeObject:user];
     }
     else{
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
+
         [self.friends addObject:user];
         [friendsRelation addObject:user];
     }
@@ -84,11 +88,11 @@
     
     if([self isFriend:user]){
         // add mark
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
     }
     else {
         // clear mark
-        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryView = nil;
     }
     return cell;
 }

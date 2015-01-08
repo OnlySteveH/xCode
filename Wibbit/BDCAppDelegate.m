@@ -13,11 +13,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [NSThread sleepForTimeInterval:1.5];
+    // [NSThread sleepForTimeInterval:1.5];
     
     [Parse setApplicationId:@"Kkh35Frn0LsIt2OD6aGMpF17XvGtxEphMG590WWV"
                   clientKey:@"gwQgVmDdLgU6EQozOCfLzx9eW8nS43zXddSqqsLr"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [self customizeUserInterface];
+    
     return YES;
 }
 
@@ -46,6 +49,38 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark Helper methods
+
+-(void)customizeUserInterface{
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.553 green:0.435 blue:0.718 alpha:1.0]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    
+    // change the image to be white when selected/not selected
+    UIImage *inboxImage = [[UIImage imageNamed:@"inbox"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *friendsImage = [[UIImage imageNamed:@"friends"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *cameraImage = [[UIImage imageNamed:@"camera"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    
+    UITabBarItem *tabInbox = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabFriends = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabCamera = [tabBar.items objectAtIndex:2];
+    
+    [tabInbox setImage:inboxImage];
+    [tabFriends setImage:friendsImage];
+    [tabCamera setImage:cameraImage];
+    
+
+
 }
 
 @end
