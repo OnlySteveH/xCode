@@ -21,14 +21,35 @@
 {
     [super viewDidLoad];
     self.moviePlayer = [[MPMoviePlayerController alloc]init];
-/**    PFUser *currentUser = [PFUser currentUser];
+    PFUser *currentUser = [PFUser currentUser];
     if (currentUser){
         NSLog(@"Current user: %@", currentUser.username);
     }
     else{
         [self performSegueWithIdentifier:@"showLogin" sender:self];
     }
- **/
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(retrieveMessages) forControlEvents:UIControlEventValueChanged];
+    
+}
+
+- (void)retrieveMessages {
+    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
+    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(error){
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        else{
+            self.messages = objects;
+            [self.tableView reloadData];
+            NSLog(@"Retrieved: %lu messages", (unsigned long)[self.messages count]);
+        }
+        if([self.refreshControl isRefreshing]){
+            [self.refreshControl endRefreshing];
+        }
+    }];
 }
 
 - (void) viewWillAppear:(BOOL)animated{
@@ -42,19 +63,7 @@
         
         NSLog(@"Current user: %@", currentUser.username);
 
-        PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
-        [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
-        [query orderByDescending:@"createdAt"];
-        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-            if(error){
-                NSLog(@"Error: %@ %@", error, [error userInfo]);
-            }
-            else{
-                self.messages = objects;
-                [self.tableView reloadData];
-                NSLog(@"Retrieved: %lu messages", (unsigned long)[self.messages count]);
-            }
-        }];
+        [self retrieveMessages];
     }else{
             [self performSegueWithIdentifier:@"showLogin" sender:self];
             NSLog(@"User not logged in");

@@ -8,6 +8,7 @@
 
 #import "BDCFriendsViewController.h"
 #import "BDCEditFriendsViewController.h"
+#import "GravatarUrlBuilder.h"
 
 @interface BDCFriendsViewController ()
 
@@ -71,6 +72,28 @@
     
     PFUser *user = [self.friends objectAtIndex:indexPath.row];
     cell.textLabel.text = user.username;
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        // get email
+        NSString *email = [user objectForKey:@"email"];
+        
+        // create hash
+        NSURL *gravatarUrl = [GravatarUrlBuilder getGravatarUrl:email];
+        
+        // request image
+        NSData *imageData = [NSData dataWithContentsOfURL:gravatarUrl];
+        if (imageData != nil) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // set image in cell
+            cell.imageView.image = [UIImage imageWithData:imageData];
+            [cell setNeedsLayout];
+          });
+        // end if
+        }
+        cell.imageView.image = [UIImage imageNamed:@"icon_person"];
+    
+    });
+    
     
     return cell;
 }

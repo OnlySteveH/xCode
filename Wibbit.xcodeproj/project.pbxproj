@@ -40,6 +40,7 @@
 		C550DB201A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C550DB1F1A5BEB9400D94300 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		C550DB261A5E9E2600D94300 /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = C550DB231A5E9E2600D94300 /* MSCellAccessory.m */; };
 		C550DB271A5E9E2600D94300 /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C550DB251A5E9E2600D94300 /* UIView+AccessViewController.m */; };
+		C550DB2A1A5F28D800D94300 /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C550DB291A5F28D800D94300 /* GravatarUrlBuilder.m */; };
 		C5DA8D46197560B100F94A69 /* BDCImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DA8D45197560B100F94A69 /* BDCImageViewController.m */; };
 		C5DA8D4819756FA200F94A69 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DA8D4719756FA200F94A69 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,8 @@
 		C550DB231A5E9E2600D94300 /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
 		C550DB241A5E9E2600D94300 /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
 		C550DB251A5E9E2600D94300 /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+		C550DB281A5F28C800D94300 /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
+		C550DB291A5F28D800D94300 /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
 		C5DA8D44197560B100F94A69 /* BDCImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCImageViewController.h; sourceTree = "<group>"; };
 		C5DA8D45197560B100F94A69 /* BDCImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCImageViewController.m; sourceTree = "<group>"; };
 		C5DA8D4719756FA200F94A69 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -205,6 +208,8 @@
 				C509ACE419633BCF00566BDF /* BDCSignupViewController.m */,
 				C509ACE019633BBA00566BDF /* BDCLoginViewController.h */,
 				C509ACE119633BBA00566BDF /* BDCLoginViewController.m */,
+				C550DB281A5F28C800D94300 /* GravatarUrlBuilder.h */,
+				C550DB291A5F28D800D94300 /* GravatarUrlBuilder.m */,
 				C550DADB1A4DB35F00D94300 /* Images.xcassets */,
 				C509AC921963248500566BDF /* Supporting Files */,
 				C550DB1B1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.h */,
@@ -363,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C509ACE8196B30F700566BDF /* BDCEditFriendsViewController.m in Sources */,
+				C550DB2A1A5F28D800D94300 /* GravatarUrlBuilder.m in Sources */,
 				C550DB1D1A5BE97500D94300 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				C550DB271A5E9E2600D94300 /* UIView+AccessViewController.m in Sources */,
 				C509ACE219633BBA00566BDF /* BDCLoginViewController.m in Sources */,
